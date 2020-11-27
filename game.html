@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowRun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "status" class="status">
+        <div class="hp" id="hp"><div class="bar hp-bar"></div></div>
+        <div class="live"><div class="bar live-bar"></div></div>
+        <div class="player-info">
+            <div class="settings"></div>
+            <div class="player"></div>
+            <div class="connect"></div>
+        </div>
+    </div>
+    <div class="score">
+        <span>00</span>
+    </div>
+    <input  type="checkbox" id="options-flex" style="display:none;">
+    <div id = "options" class="options">
+        <label for="verify-quit">
+            <div id = "quit-btn" class="options-burger-bgnd burger-bgnd1">
+                <div class="options-burger"></div>
+            </div>
+        </label>
+
+        <label for="verify-restart">
+            <div id = "restart-btn" class="options-burger-bgnd burger-bgnd2">
+                <div class="restart"></div>
+            </div>
+        </label>
+
+        <label for="get-about">
+            <div id = "about-btn" class="options-burger-bgnd burger-bgnd3">
+                <div class="about"></div>
+            </div>
+        </label>
+
+        <label for="activate-fullscreen">
+            <input type="checkbox" id="activate-fullscreen" style="display: none;">
+            <div id = "fullscreen-btn" class="options-burger-bgnd burger-bgnd4">
+                <div class="fullscreen1"></div>
+                <div class="fullscreen2"></div>
+                <div class="fullscreen3"></div>
+                <div class="fullscreen4"></div>
+            </div>
+        </label>
+        
+
+        <label for="game-paused">
+            <div id = "pause-btn" class="options-burger-bgnd burger-bgnd5">
+                <div class="pause"></div>
+            </div>
+        </label>
+    </div>
+    
+    <input class = "modal" type="checkbox" id="game-paused" style="display: none;">
+    <section class="notify">
+        <div class="paused">
+            <p>pause</p>
+        </div>
+    </section>
+
+    <input class = "modal" type="checkbox" id="get-about" style="display: none;">
+    <section class="notify">
+        <div class="about-info"></div>
+    </section>
+
+    <input  class = "modal" type="checkbox" id="verify-restart" style="display: none;">
+    <section class="notify">
+        <div class="confirm-restart">
+            <div class="msg">Do you want to restart?</div>
+            <div class="yes">yes</div>
+            <div class="no">no</div>
+        </div>
+    </section>
+
+    <input class = "modal" type="checkbox" id="verify-quit" style="display: none;">
+    <section class="notify">
+        <div class="confirm-quit">
+            <div class="msg">Do you want to quit the game?</div>
+            <div id = "confirm-quit-btn" class="yes">yes</div>
+            <div class="no">no</div>
+        </div>
+    </section>
+    
+    <canvas id = "scene1"></canvas>
+    <script src="action.js"></script>
+</body>
+</html>
